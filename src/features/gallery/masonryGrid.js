@@ -47,7 +47,7 @@ export function renderMasonryGrid(category = 'all') {
             loading="lazy"
             class="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex flex-col justify-end p-6 md:p-8 z-20">
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-950/85 via-gray-950/30 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-400 flex flex-col justify-end p-6 md:p-8 z-20">
             <span class="inline-block px-3 py-1 rounded-full text-xs uppercase tracking-wider font-semibold mb-2 text-white shadow-sm" style="background-color: ${item.accentColor}">
               ${formatCategoryName(item.category)}
             </span>

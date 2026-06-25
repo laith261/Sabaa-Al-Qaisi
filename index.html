@@ -52,7 +52,7 @@
   <!-- Sticky Glassmorphism Navigation Header -->
   <header class="fixed top-0 inset-x-0 z-40 py-4 px-6 md:px-12 transition-all duration-300 pointer-events-none">
     <nav
-      class="max-w-7xl mx-auto glass-panel px-6 py-3.5 rounded-full shadow-lg flex items-center justify-between pointer-events-auto border border-white/80">
+      class="relative max-w-7xl mx-auto glass-panel px-6 py-3.5 rounded-full shadow-lg flex items-center justify-between pointer-events-auto border border-white/80">
       <a href="#hero" class="magnetic-target flex items-center space-x-2.5">
         <img src="./assets/images/logo.png" alt="Sabaa Al-Qaisi Logo" class="h-8 md:h-9 w-auto object-contain" />
         <span class="font-heading font-black text-gray-900 text-lg md:text-xl tracking-tight">
@@ -61,13 +61,35 @@
       </a>
 
       <!-- Desktop Navigation Links -->
-      <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+      <div class="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center space-x-8 text-sm font-semibold text-gray-700">
         <a href="#gallery" class="magnetic-target hover:text-cyan-600 transition-colors py-1">Portfolio</a>
         <a href="#about" class="magnetic-target hover:text-pink-600 transition-colors py-1">Meet Sabaa</a>
         <a href="#contact" class="magnetic-target hover:text-amber-600 transition-colors py-1">Consultation</a>
       </div>
-      <div></div>
+      <!-- Mobile Hamburger Toggle Button -->
+      <button type="button" id="mobileMenuBtn" aria-label="Toggle Navigation Menu"
+        class="md:hidden p-2 rounded-full text-gray-800 hover:bg-gray-100 transition-colors focus:outline-none active:scale-95">
+        <svg id="hamburgerIcon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="closeMenuIcon" class="w-6 h-6 hidden transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
     </nav>
+
+    <!-- Mobile Navigation Drawer Panel -->
+    <div id="mobileMenuPanel"
+      class="max-w-7xl mx-auto mt-2 glass-panel rounded-3xl p-6 shadow-2xl border border-white/90 md:hidden transition-all duration-300 transform -translate-y-4 opacity-0 pointer-events-none hidden pointer-events-auto">
+      <div class="flex flex-col space-y-3 text-center font-heading text-lg font-bold text-gray-800">
+        <a href="#gallery" class="mobile-nav-link py-2.5 hover:text-cyan-600 transition-colors border-b border-gray-200/60">Portfolio</a>
+        <a href="#about" class="mobile-nav-link py-2.5 hover:text-pink-600 transition-colors border-b border-gray-200/60">Meet Sabaa</a>
+        <a href="#contact" class="mobile-nav-link py-2.5 hover:text-amber-600 transition-colors">Consultation</a>
+        <div class="pt-3 flex justify-center items-center gap-6 text-xs font-semibold uppercase tracking-wider text-gray-500 border-t border-gray-200/60">
+          <a href="https://www.instagram.com/sabaaalqaisi_art/" target="_blank" rel="noopener noreferrer" class="text-pink-600 py-1">Instagram</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- Main Content Single Page -->
@@ -93,7 +115,7 @@
         <!-- Left Typography & CTA -->
         <div id="heroTextLayer" class="lg:col-span-7 text-center lg:text-left pt-6 lg:pt-0">
           <h1
-            class="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight text-gray-900 leading-[1.1] mb-6 font-heading">
+            class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight text-gray-900 leading-[1.1] mb-6 font-heading">
             Welcome to my artistic world<span
               class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-cyan-500 to-amber-500">...</span>
           </h1>
@@ -182,9 +204,9 @@
             </div>
             <!-- Floating badge -->
             <div
-              class="absolute -bottom-6 -right-6 glass-panel p-6 rounded-2xl shadow-xl max-w-[200px] border border-white hidden sm:block animate-float">
-              <span class="text-3xl font-black text-pink-600 block font-heading">100%</span>
-              <span class="text-xs font-medium text-gray-700">Handcrafted passion in every interior brushstroke.</span>
+              class="absolute bottom-2 right-2 sm:-bottom-6 sm:-right-6 glass-panel p-4 sm:p-6 rounded-2xl shadow-xl max-w-[150px] sm:max-w-[200px] border border-white block animate-float z-20">
+              <span class="text-2xl sm:text-3xl font-black text-pink-600 block font-heading">100%</span>
+              <span class="text-[11px] sm:text-xs font-medium text-gray-700 leading-tight">Handcrafted passion in every interior brushstroke.</span>
             </div>
           </div>
         </div>
@@ -255,8 +277,7 @@
             Book Your Consultation
           </h2>
           <p class="text-gray-600 font-light text-base sm:text-lg">
-            Ready to bring living art into your walls? Fill out the form below or reach out directly through WhatsApp
-            for an instant chat.
+            Ready to bring living art into your walls? Fill out the commission inquiry form below and Sabaa will get in touch with you.
           </p>
         </div>
 
@@ -267,13 +288,13 @@
               <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Your
                 Full Name</label>
               <input type="text" id="clientName" name="clientName" required placeholder="e.g. Dana Al-Hassan"
-                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium" />
+                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-base sm:text-sm font-medium" />
             </div>
             <div>
               <label for="clientEmail" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Email
                 Address</label>
               <input type="email" id="clientEmail" name="clientEmail" required placeholder="e.g. dana@example.com"
-                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium" />
+                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-base sm:text-sm font-medium" />
             </div>
           </div>
 
@@ -281,7 +302,7 @@
             <label for="serviceType"
               class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Commission Interest</label>
             <select id="serviceType" name="serviceType"
-              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium cursor-pointer">
+              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-base sm:text-sm font-medium cursor-pointer">
               <option value="Residential Wall Mural">Custom Residential Wall Mural</option>
               <option value="Commercial Hospitality Art">Commercial / Hospitality Interior Art</option>
               <option value="Bespoke Resin Artwork">Bespoke Fluid Resin Artwork</option>
@@ -295,7 +316,7 @@
               Dimensions</label>
             <textarea id="clientMessage" name="clientMessage" rows="4" required
               placeholder="Tell Sabaa about your space, preferred colors (e.g. turquoise & gold), and estimated wall size..."
-              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium resize-y"></textarea>
+              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-base sm:text-sm font-medium resize-y"></textarea>
           </div>
 
           <div class="pt-2 text-center">

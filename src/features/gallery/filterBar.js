@@ -20,7 +20,7 @@ export function initFilterBar() {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.dataset.category = cat.id;
-      btn.className = `px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 transform active:scale-95 shadow-sm border ${
+      btn.className = `px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 transform active:scale-95 shadow-sm border ${
         cat.id === 'all'
           ? 'bg-cyan-500 text-white border-cyan-500 shadow-cyan-500/30'
           : 'bg-white/80 text-gray-700 border-gray-200 hover:border-cyan-400 hover:text-cyan-600'
@@ -51,9 +51,9 @@ function updateFilterButtons(container, activeCat) {
   const buttons = container.querySelectorAll('button');
   buttons.forEach(btn => {
     if (btn.dataset.category === activeCat) {
-      btn.className = 'px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 transform scale-105 shadow-md bg-cyan-500 text-white border-cyan-500 shadow-cyan-500/30';
+      btn.className = 'px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 transform scale-105 shadow-md bg-cyan-500 text-white border-cyan-500 shadow-cyan-500/30';
     } else {
-      btn.className = 'px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-102 bg-white/80 text-gray-700 border border-gray-200 hover:border-cyan-400 hover:text-cyan-600 shadow-sm';
+      btn.className = 'px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 transform hover:scale-102 bg-white/80 text-gray-700 border border-gray-200 hover:border-cyan-400 hover:text-cyan-600 shadow-sm';
     }
   });
 }

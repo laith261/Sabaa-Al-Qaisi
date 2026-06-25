@@ -52,7 +52,7 @@ export function initContactForm() {
       }, 1000);
     });
 
-    // Initialize WhatsApp and Instagram quick trigger links
+    // Initialize Instagram quick trigger link
     initSocialShortcuts();
   } catch (error) {
     console.error('Error initializing contact form:', error);
@@ -66,7 +66,7 @@ function showToast(toastEl, message, type = 'success') {
   if (!toastEl) return;
 
   toastEl.textContent = message;
-  toastEl.className = `fixed bottom-8 right-8 z-50 px-6 py-4 rounded-xl shadow-2xl text-sm font-medium transition-all duration-500 transform translate-y-0 opacity-100 max-w-md ${
+  toastEl.className = `fixed bottom-4 left-4 right-4 sm:left-auto sm:bottom-8 sm:right-8 z-50 px-6 py-4 rounded-xl shadow-2xl text-sm font-medium transition-all duration-500 transform translate-y-0 opacity-100 max-w-md ${
     type === 'success'
       ? 'bg-emerald-600 text-white border border-emerald-400'
       : 'bg-rose-600 text-white border border-rose-400'
@@ -79,19 +79,10 @@ function showToast(toastEl, message, type = 'success') {
 }
 
 /**
- * Binds click actions to direct WhatsApp / Instagram shortcuts.
+ * Binds click action to direct Instagram shortcut.
  */
 function initSocialShortcuts() {
-  const waBtn = document.getElementById('shortcutWhatsapp');
   const igBtn = document.getElementById('shortcutInstagram');
-
-  if (waBtn) {
-    waBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const text = encodeURIComponent('Hello Sabaa! I visited your website and would love to discuss a custom interior art commission.');
-      window.open(`https://wa.me/962790000000?text=${text}`, '_blank');
-    });
-  }
 
   if (igBtn) {
     igBtn.addEventListener('click', (e) => {

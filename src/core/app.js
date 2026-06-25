@@ -9,6 +9,7 @@ import { renderMasonryGrid } from '../features/gallery/masonryGrid.js';
 import { initAboutReveal } from '../features/about/aboutReveal.js';
 import { initContactForm } from '../features/contact/contactForm.js';
 import { initMagneticButtons } from '../features/contact/magneticBtn.js';
+import { initMobileMenu } from '../features/navigation/mobileMenu.js';
 
 /**
  * Boots the application safely once DOM is fully parsed.
@@ -40,6 +41,10 @@ function bootstrapApp() {
   try {
     initMagneticButtons();
   } catch (err) { console.error('Magnetic buttons init failed:', err); }
+
+  try {
+    initMobileMenu();
+  } catch (err) { console.error('Mobile menu init failed:', err); }
 }
 
 if (document.readyState === 'loading') {
