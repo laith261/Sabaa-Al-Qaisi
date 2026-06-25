@@ -48,7 +48,7 @@ export function initContactForm() {
         }
 
         form.reset();
-        showToast(notification, `Thank you, ${name}! Your consultation request for "${service}" has been received. Saba will reach out within 24 hours.`, 'success');
+        showToast(notification, `Thank you, ${name}! Your consultation request for "${service}" has been received. Sabaa will reach out within 24 hours.`, 'success');
       }, 1000);
     });
 
@@ -88,7 +88,7 @@ function initSocialShortcuts() {
   if (waBtn) {
     waBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      const text = encodeURIComponent('Hello Saba! I visited your website and would love to discuss a custom interior art commission.');
+      const text = encodeURIComponent('Hello Sabaa! I visited your website and would love to discuss a custom interior art commission.');
       window.open(`https://wa.me/962790000000?text=${text}`, '_blank');
     });
   }

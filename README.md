@@ -1,6 +1,6 @@
 # Sabaa Al-Qaisi (سبأ القيسي) | Interior Designer & Fluid Artist
 
-![Saba Al-Qaisi Hero](./assets/images/hero.jpg)
+![Sabaa Al-Qaisi Hero](./assets/images/hero.jpg)
 
 > *"I believe blank walls are quiet invitations for celebration."*
 
@@ -10,9 +10,9 @@ Welcome to the **unofficial** digital portfolio showcase dedicated to **Sabaa Al
 
 ## 🎨 About the Artist
 
-Drawing and painting since childhood, Saba built her multidisciplinary creative career through self-taught perseverance. Originally coming from a background in agricultural sciences, her lifelong passion for colors and spatial harmony led her to master interior wall murals, fluid acrylic pours on stretched canvas, and high-gloss epoxy resin installations.
+Drawing and painting since childhood, Sabaa built her multidisciplinary creative career through self-taught perseverance. Originally coming from a background in agricultural sciences, her lifelong passion for colors and spatial harmony led her to master interior wall murals, fluid acrylic pours on stretched canvas, and high-gloss epoxy resin installations.
 
-Operating from her studio in **Erbil**, Saba’s creative philosophy centers on breathing emotional warmth and organic vitality into everyday living and formal spaces. Her artwork has been featured in multiple regional fine art exhibitions and cultural galleries across Iraq.
+Operating from her studio in **Erbil**, Sabaa’s creative philosophy centers on breathing emotional warmth and organic vitality into everyday living and formal spaces. Her artwork has been featured in multiple regional fine art exhibitions and cultural galleries across Iraq.
 
 ---
 
@@ -27,7 +27,7 @@ Operating from her studio in **Erbil**, Saba’s creative philosophy centers on 
 
 ## 🌐 Connect & Commission
 
-Explore Saba's latest artwork collections, behind-the-scenes studio process, and direct consultation inquiries across her official social channels:
+Explore Sabaa's latest artwork collections, behind-the-scenes studio process, and direct consultation inquiries across her official social channels:
 
 * **Facebook**: [Sabaa Alqaissi Profiles](https://www.facebook.com/SabaaAlqaissi/)
 * **TikTok**: [@sabaaalqaisi_art](https://www.tiktok.com/@sabaaalqaisi_art)

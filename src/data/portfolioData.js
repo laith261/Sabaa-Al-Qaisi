@@ -1,6 +1,6 @@
 /**
  * Portfolio Data Module
- * Contains structured metadata for Saba Al-Qaisi's artworks, interior murals, and studio behind-the-scenes.
+ * Contains structured metadata for Sabaa Al-Qaisi's artworks, interior murals, and studio behind-the-scenes.
  */
 
 export const portfolioItems = [

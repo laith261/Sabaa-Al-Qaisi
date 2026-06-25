@@ -14,7 +14,7 @@ import { initMagneticButtons } from '../features/contact/magneticBtn.js';
  * Boots the application safely once DOM is fully parsed.
  */
 function bootstrapApp() {
-  console.log('🎨 Bootstrapping Saba Al-Qaisi Art & Interior Portfolio...');
+  console.log('🎨 Bootstrapping Sabaa Al-Qaisi Art & Interior Portfolio...');
 
   try {
     initPaintLoader();
