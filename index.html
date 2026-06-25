@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saba Al-Qaisi | Interior Designer & Fluid Artist</title>
+  <meta name="description"
+    content="Welcome to the artistic world of Saba Al-Qaisi... where colors flow to bring life into your walls. Bespoke interior design consultations & custom fluid art murals." />
+  <meta name="keywords"
+    content="Saba Al-Qaisi, Interior Designer, Fluid Artist, Wall Murals, Resin Art, Bespoke Interior Design, Erbil, Acrylic Pour" />
+  <meta name="author" content="Saba Al-Qaisi" />
+  <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Saba Al-Qaisi | Interior Designer & Fluid Artist" />
+  <meta property="og:description"
+    content="Where colors flow to bring life into your walls. Explore bespoke interior murals and vibrant art collections." />
+  <meta property="og:image" content="./assets/images/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#FAF9F6',
+            dark: '#1E1E24',
+            accent: {
+              pink: '#EC4899',
+              turquoise: '#06B6D4',
+              yellow: '#F59E0B'
+            }
+          },
+          scale: {
+            '102': '1.02'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Main Styles -->
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+
+<body class="bg-[#FAF9F6] text-[#1E1E24] antialiased selection:bg-pink-500 selection:text-white">
+
+
+  <!-- Sticky Glassmorphism Navigation Header -->
+  <header class="fixed top-0 inset-x-0 z-40 py-4 px-6 md:px-12 transition-all duration-300 pointer-events-none">
+    <nav
+      class="max-w-7xl mx-auto glass-panel px-6 py-3.5 rounded-full shadow-lg flex items-center justify-between pointer-events-auto border border-white/80">
+      <a href="#hero" class="magnetic-target flex items-center space-x-2.5">
+        <img src="./assets/images/logo.png" alt="Saba Al-Qaisi Logo" class="h-8 md:h-9 w-auto object-contain" />
+        <span
+          class="font-heading text-xl md:text-2xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-pink-600 to-cyan-600">
+          Saba<span class="text-pink-500">.</span>
+        </span>
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide text-gray-800">
+        <a href="#gallery" class="magnetic-target hover:text-cyan-600 transition-colors py-1">Portfolio</a>
+        <a href="#about" class="magnetic-target hover:text-pink-600 transition-colors py-1">Meet Saba</a>
+        <a href="#contact" class="magnetic-target hover:text-amber-600 transition-colors py-1">Consultation</a>
+      </div>
+      <a href="#contact"
+        class="magnetic-target px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 text-white font-medium text-xs md:text-sm shadow-md hover:shadow-lg hover:opacity-95 active:scale-95 transition-all">
+        Commission Art
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Content Single Page -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero"
+      class="relative w-full min-h-screen overflow-hidden flex items-center justify-center pt-28 pb-16 px-6 md:px-16">
+      <!-- Ambient Background Glows -->
+      <div
+        class="absolute top-1/4 left-10 w-96 h-96 rounded-full bg-pink-300/30 filter blur-3xl pointer-events-none animate-pulse">
+      </div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-cyan-300/30 filter blur-3xl pointer-events-none animate-pulse"
+        style="animation-delay: 1s"></div>
+
+      <!-- Ambient Floating Canvas Particles -->
+      <canvas id="heroCanvas" class="absolute inset-0 pointer-events-none z-10 opacity-60"></canvas>
+
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-20">
+
+        <!-- Left Typography & CTA -->
+        <div id="heroTextLayer" class="lg:col-span-7 text-center lg:text-left pt-6 lg:pt-0">
+          <h1
+            class="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight text-gray-900 leading-[1.1] mb-6 font-heading">
+            Welcome to my artistic world<span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-cyan-500 to-amber-500">...</span>
+          </h1>
+          <p class="text-lg sm:text-2xl font-light text-gray-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-10">
+            Where vibrant colors flow to bring soulful life and emotional resonance into your walls.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="#gallery"
+              class="magnetic-target w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gray-900 to-gray-800 text-white font-bold text-sm shadow-xl hover:shadow-2xl hover:scale-102 active:scale-98 transition-all text-center">
+              Explore Gallery
+            </a>
+            <a href="#about"
+              class="magnetic-target w-full sm:w-auto px-8 py-4 rounded-full glass-panel text-gray-900 font-bold text-sm shadow-md hover:bg-white active:scale-98 transition-all text-center border border-gray-200">
+              Meet the Artist
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Clear Showcase Centerpiece -->
+        <div id="heroBgLayer" class="lg:col-span-5 relative flex items-center justify-center">
+          <!-- Colorful backdrop aura -->
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-pink-500/20 via-cyan-500/20 to-amber-500/20 rounded-3xl filter blur-2xl transform rotate-3 scale-105 pointer-events-none">
+          </div>
+
+          <!-- Main Image Frame -->
+          <div
+            class="relative w-full max-w-lg lg:max-w-none rounded-3xl p-3 glass-panel shadow-2xl border border-white/90 transform hover:-translate-y-1 transition-transform duration-500">
+            <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-inner bg-gray-100">
+              <img src="./assets/images/hero.jpg" alt="Saba Al-Qaisi Studio Showcase Artwork"
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. PORTFOLIO GALLERY (Asymmetric Masonry Grid) -->
+    <section id="gallery" class="py-24 px-6 md:px-16 max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-600 block mb-2">Curated Works</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 font-heading mb-4">
+          The Asymmetric Portfolio
+        </h2>
+        <p class="text-gray-600 font-light text-base md:text-lg">
+          Every space demands its own rhythm. Filter through fluid artworks, bespoke residential murals, and raw studio
+          alchemy.
+        </p>
+      </div>
+
+      <!-- Interactive Filter Bar -->
+      <div id="portfolioFilterBar" class="flex flex-wrap items-center justify-center gap-2.5 mb-14" role="tablist"
+        aria-label="Portfolio Category Filter">
+        <!-- JS injects filter pills here -->
+      </div>
+
+      <!-- Masonry Grid Render Container -->
+      <div id="portfolioMasonryGrid"
+        class="grid grid-cols-1 md:grid-cols-3 auto-rows-[280px] md:auto-rows-[340px] gap-6 md:gap-8">
+        <!-- JS injects dynamic asymmetric cards here -->
+      </div>
+    </section>
+
+    <!-- 3. MEET THE ARTIST SECTION -->
+    <section id="about"
+      class="py-24 px-6 md:px-16 bg-gradient-to-b from-[#FAF9F6] via-[#F0EFEA] to-[#FAF9F6] relative overflow-hidden">
+      <!-- Decorative Background blobs -->
+      <div class="absolute -left-20 top-1/3 w-96 h-96 rounded-full bg-cyan-200/40 filter blur-3xl pointer-events-none">
+      </div>
+      <div
+        class="absolute -right-20 bottom-10 w-96 h-96 rounded-full bg-pink-200/40 filter blur-3xl pointer-events-none">
+      </div>
+
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
+
+        <!-- Portrait Side -->
+        <div class="lg:col-span-6 about-reveal opacity-0 translate-y-12 transition-all duration-700">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div
+              class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-pink-500 via-amber-400 to-cyan-400 transform rotate-2 scale-102 opacity-80 filter blur-sm">
+            </div>
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+              <img src="./assets/images/saba.jpg" alt="Saba Al-Qaisi in paint-stained overalls"
+                class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
+            </div>
+            <!-- Floating badge -->
+            <div
+              class="absolute -bottom-6 -right-6 glass-panel p-6 rounded-2xl shadow-xl max-w-[200px] border border-white hidden sm:block animate-float">
+              <span class="text-3xl font-black text-pink-600 block font-heading">100%</span>
+              <span class="text-xs font-medium text-gray-700">Handcrafted passion in every interior brushstroke.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversational Bio Side -->
+        <div class="lg:col-span-6 about-reveal opacity-0 translate-y-12 transition-all duration-700 delay-200">
+          <div
+            class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-pink-100/80 border border-pink-200 mb-4">
+            <span class="w-2 h-2 rounded-full bg-pink-600 animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-widest text-pink-700">Visual Artist & Interior
+              Designer</span>
+          </div>
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight font-heading mb-6 leading-[1.15]">
+            "I believe blank walls are quiet invitations for celebration."
+          </h2>
+          <div class="space-y-4 text-gray-700 font-light text-base md:text-lg leading-relaxed">
+            <p>
+              Hello! I’m <strong class="font-bold text-gray-900">Sabaa Al-Qaisi (سبأ القيسي)</strong>. Drawing and
+              painting since childhood, my creative journey bridges the gap between structured interior architecture and
+              expressive visual spontaneity.
+            </p>
+            <p>
+              Coming from a background in agricultural sciences, my lifelong creative passion led me to build a
+              multidisciplinary career in interior design and fluid arts through self-taught perseverance. Today, based
+              in Erbil, I specialize in breathing warmth and emotional resonance into rigid spaces.
+            </p>
+            <p>
+              Whether painting fluid pours on canvas, crafting high-gloss epoxy resin, or commissioning full-wall
+              architectural murals, my promise is simple: <strong class="font-semibold text-gray-900">we will transform
+                your home into an authentic reflection of your personal joy.</strong>
+            </p>
+          </div>
+
+          <!-- Exhibition & Studio Highlights -->
+          <div class="mt-10 pt-8 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-3 gap-6">
+            <div>
+              <span class="block text-xl md:text-2xl font-extrabold font-heading text-gray-900">Erbil</span>
+              <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Studio Base</span>
+            </div>
+            <div>
+              <span class="block text-xl md:text-2xl font-extrabold font-heading text-pink-600">Multimedium</span>
+              <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Wood, Canvas & Walls</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <span class="block text-xl md:text-2xl font-extrabold font-heading text-cyan-600">Exhibitions</span>
+              <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Featured Art Galleries</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CONTACT & COMMISSION FORM SECTION -->
+    <section id="contact" class="py-24 px-6 md:px-16 max-w-5xl mx-auto relative z-20">
+      <div
+        class="glass-panel rounded-3xl p-8 sm:p-12 md:p-16 shadow-2xl border border-white relative overflow-hidden bg-white/90">
+
+        <!-- Subtle corner glow -->
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-pink-400/20 via-cyan-400/20 to-transparent rounded-bl-full pointer-events-none">
+        </div>
+
+        <div class="text-center max-w-2xl mx-auto mb-12 relative z-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-600 block mb-2">Let's Create Magic</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-gray-900 font-heading mb-4">
+            Book Your Consultation
+          </h2>
+          <p class="text-gray-600 font-light text-base sm:text-lg">
+            Ready to bring living art into your walls? Fill out the form below or reach out directly through WhatsApp
+            for an instant chat.
+          </p>
+        </div>
+
+        <!-- Styled Commission Form -->
+        <form id="commissionForm" class="space-y-6 max-w-3xl mx-auto relative z-10" novalidate>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="clientName" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Your
+                Full Name</label>
+              <input type="text" id="clientName" name="clientName" required placeholder="e.g. Dana Al-Hassan"
+                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium" />
+            </div>
+            <div>
+              <label for="clientEmail" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Email
+                Address</label>
+              <input type="email" id="clientEmail" name="clientEmail" required placeholder="e.g. dana@example.com"
+                class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium" />
+            </div>
+          </div>
+
+          <div>
+            <label for="serviceType"
+              class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Commission Interest</label>
+            <select id="serviceType" name="serviceType"
+              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium cursor-pointer">
+              <option value="Residential Wall Mural">Custom Residential Wall Mural</option>
+              <option value="Commercial Hospitality Art">Commercial / Hospitality Interior Art</option>
+              <option value="Bespoke Resin Artwork">Bespoke Fluid Resin Artwork</option>
+              <option value="Interior Color Consultation">Interior Space Color Consultation</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="clientMessage"
+              class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Project Vision & Wall
+              Dimensions</label>
+            <textarea id="clientMessage" name="clientMessage" rows="4" required
+              placeholder="Tell Saba about your space, preferred colors (e.g. turquoise & gold), and estimated wall size..."
+              class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-200 focus:bg-white focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 outline-none transition-all text-sm font-medium resize-y"></textarea>
+          </div>
+
+          <div class="pt-2 text-center">
+            <button type="submit"
+              class="magnetic-target group inline-flex items-center justify-center w-full sm:w-auto px-10 py-5 rounded-full bg-pink-600 hover:bg-pink-500 text-white font-bold text-sm tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95">
+              <span class="flex items-center gap-3">
+                <span>Submit Commission Inquiry</span>
+                <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Stylized Social Shortcuts -->
+        <div class="mt-14 pt-10 border-t border-gray-200 text-center">
+          <span class="text-xs uppercase tracking-widest font-semibold text-gray-500 block mb-6">Explore Saba's Social
+            Profiles</span>
+          <div class="flex flex-wrap justify-center items-center gap-3">
+
+            <button type="button" id="shortcutInstagram"
+              class="magnetic-target inline-flex items-center space-x-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-amber-500 text-white font-semibold text-xs shadow-md hover:opacity-95 active:scale-95 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              <span>Instagram</span>
+            </button>
+
+            <a href="https://www.facebook.com/SabaaAlqaissi/" target="_blank" rel="noopener noreferrer"
+              class="magnetic-target inline-flex items-center space-x-2.5 px-5 py-2.5 rounded-full bg-[#1877F2] text-white font-semibold text-xs shadow-md hover:bg-[#166fe5] active:scale-95 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+              <span>Facebook</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@sabaaalqaisi_art" target="_blank" rel="noopener noreferrer"
+              class="magnetic-target inline-flex items-center space-x-2.5 px-5 py-2.5 rounded-full bg-[#000000] text-white font-semibold text-xs shadow-md hover:bg-gray-800 active:scale-95 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+              </svg>
+              <span>TikTok</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sabaa-alqaisi-art-48b274219/" target="_blank" rel="noopener noreferrer"
+              class="magnetic-target inline-flex items-center space-x-2.5 px-5 py-2.5 rounded-full bg-[#0A66C2] text-white font-semibold text-xs shadow-md hover:bg-[#08529d] active:scale-95 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 md:px-16 border-t border-gray-200 text-center text-sm text-gray-500 bg-[#FAF9F6]">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <a href="#hero" class="flex items-center justify-center sm:justify-start space-x-2">
+        <img src="./assets/images/logo.png" alt="Saba Al-Qaisi Logo" class="h-8 w-auto object-contain" />
+        <span class="font-heading font-black text-gray-900 text-lg">Saba Al-Qaisi<span
+            class="text-pink-500">.</span></span>
+      </a>
+      <p class="font-light">© 2026 Saba Al-Qaisi Interior Design & Fluid Art. All rights reserved.</p>
+      <div class="flex flex-wrap items-center justify-center gap-6 font-semibold">
+        <a href="https://www.facebook.com/SabaaAlqaissi/" target="_blank" rel="noopener noreferrer"
+          class="hover:text-pink-600 transition-colors">Facebook</a>
+        <a href="https://www.tiktok.com/@sabaaalqaisi_art" target="_blank" rel="noopener noreferrer"
+          class="hover:text-pink-600 transition-colors">TikTok</a>
+        <a href="https://www.linkedin.com/in/sabaa-alqaisi-art-48b274219/" target="_blank" rel="noopener noreferrer"
+          class="hover:text-pink-600 transition-colors">LinkedIn</a>
+        <a href="#hero" class="hover:text-cyan-600 transition-colors border-l border-gray-300 pl-6">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Feedback Toast Container -->
+  <div id="formToast"
+    class="fixed bottom-8 right-8 z-50 px-6 py-4 rounded-xl shadow-2xl text-sm font-medium transition-all duration-500 transform translate-y-20 opacity-0 max-w-md pointer-events-none">
+  </div>
+
+  <!-- Application Entry Module -->
+  <script type="module" src="./src/core/app.js"></script>
+</body>
+
+</html>
